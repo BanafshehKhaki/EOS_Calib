@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>EOS_calib</string>
+	<key>CFBundleIdentifier</key>
+	<string>P5J4W2P635.eos.calib.EOS-calib</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MinimumOSVersion</key>
+	<string>9.0</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera required</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Galery access to save the images </string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>library</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Media</string>
+	<key>Custom Property</key>
+	<string></string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>UILaunchStoryboardName</key>
+	<string>Main</string>
+</dict>
+</plist>

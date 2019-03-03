@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{2D99E93C-B0B3-49D2-A172-ACD2050694F4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EOS_calib/ViewController.cs">
+    <Files>
+      <File FileName="EOS_calib/ViewController.cs" Line="42" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EOS_calib" expanded="True">
+            <Node name="EOS_calib" expanded="True">
+              <Node name="Resources" expanded="True" />
+              <Node name="ViewController.cs" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EOS__calib PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.34fed11eefc1a66215518d010507295410f7f5a4">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam DeveloperId="RZWFQLNR9M" TeamId="P5J4W2P635" />
+  </MonoDevelop.Ide.ItemProperties.EOS__calib>
+</Properties>

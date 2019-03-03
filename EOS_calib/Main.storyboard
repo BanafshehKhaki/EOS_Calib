@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pcp-LV-ocy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vf-ew-Qe7" userLabel="liveCameraStream">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMv-Ah-5HR" userLabel="Overlay">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mi3-53-yhv">
+                                        <rect key="frame" x="274" y="0.0" width="100" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Doq-rs-vh0"/>
+                                            <constraint firstAttribute="height" constant="150" id="cz2-ZY-aQc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossHair.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dIi-aa-F5a">
+                                        <rect key="frame" x="132.5" y="189" width="110" height="269"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="269" id="97A-iC-nuy"/>
+                                            <constraint firstAttribute="width" constant="110" id="e0M-bs-QHt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbr-g0-ylN">
+                                        <rect key="frame" x="112.5" y="590" width="150" height="57"/>
+                                        <color key="backgroundColor" red="0.94429284329999996" green="0.81187778710000003" blue="0.77308195830000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="PaJ-Mx-KGp"/>
+                                            <constraint firstAttribute="width" constant="150" id="R0q-E2-lBh"/>
+                                        </constraints>
+                                        <state key="normal" title="Start capturing">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="captureSpectraTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u9A-wH-xuJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dIi-aa-F5a" firstAttribute="centerX" secondItem="MMv-Ah-5HR" secondAttribute="centerX" id="CUO-AK-iNM"/>
+                                    <constraint firstAttribute="trailing" secondItem="mi3-53-yhv" secondAttribute="trailing" constant="1" id="VFA-K6-U4c"/>
+                                    <constraint firstItem="mi3-53-yhv" firstAttribute="top" secondItem="MMv-Ah-5HR" secondAttribute="top" id="dS6-me-1De"/>
+                                    <constraint firstItem="dIi-aa-F5a" firstAttribute="centerY" secondItem="MMv-Ah-5HR" secondAttribute="centerY" id="hHL-Yc-qwd"/>
+                                    <constraint firstAttribute="bottom" secondItem="xbr-g0-ylN" secondAttribute="bottom" id="kfA-el-cCw"/>
+                                    <constraint firstItem="xbr-g0-ylN" firstAttribute="centerX" secondItem="MMv-Ah-5HR" secondAttribute="centerX" id="nb6-cC-TEc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7vf-ew-Qe7" firstAttribute="top" secondItem="MMv-Ah-5HR" secondAttribute="top" id="3Fo-BP-XTB"/>
+                            <constraint firstAttribute="trailing" secondItem="7vf-ew-Qe7" secondAttribute="trailing" id="5h0-6x-b7V"/>
+                            <constraint firstItem="7vf-ew-Qe7" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="DH3-VN-YND"/>
+                            <constraint firstItem="7vf-ew-Qe7" firstAttribute="leading" secondItem="MMv-Ah-5HR" secondAttribute="leading" id="aVc-Cf-uI9"/>
+                            <constraint firstItem="7vf-ew-Qe7" firstAttribute="trailing" secondItem="MMv-Ah-5HR" secondAttribute="trailing" id="ba6-Hw-RCi"/>
+                            <constraint firstItem="MMv-Ah-5HR" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="dHE-yD-BRf"/>
+                            <constraint firstItem="7vf-ew-Qe7" firstAttribute="leading" secondItem="pcp-LV-ocy" secondAttribute="leading" id="ghf-BR-LBd"/>
+                            <constraint firstItem="7vf-ew-Qe7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uev-zO-XsP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Ct-iJ-Dda"/>
+                    <connections>
+                        <outlet property="CrossHair" destination="dIi-aa-F5a" id="lFz-59-W3M"/>
+                        <outlet property="ImagePreview" destination="mi3-53-yhv" id="M3o-NI-hLd"/>
+                        <outlet property="liveCameraStream" destination="7vf-ew-Qe7" id="Zjf-b4-LGu"/>
+                        <outlet property="takeimageButton" destination="xbr-g0-ylN" id="yMz-wm-W9J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-594.39999999999998" y="-35.532233883058474"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="crossHair.png" width="220" height="602"/>
+    </resources>
+</document>
